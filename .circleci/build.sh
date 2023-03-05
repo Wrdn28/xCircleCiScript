@@ -3,7 +3,6 @@ echo "Downloading few Dependecies . . ."
 git clone --depth=1 https://github.com/Yara0202/Kernel_Asus_X01AD-X X01AD
 git clone --depth=1 https://github.com/arifmndr17/hyper-clang clang
 
-
 # Main
 KERNEL_NAME=kernel_Test # IMPORTANT ! Declare your kernel name
 KERNEL_ROOTDIR=$(pwd)/X01AD # IMPORTANT ! Fill with your kernel source root directory.
