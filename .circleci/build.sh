@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
 git clone --depth=1 https://github.com/Wrdn28/Kernel_Asus_X01AD-X X01AD
-git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
+git clone --depth=1 https://gitlab.com/ElectroPerf/atom-x-clang clang
 
 # Main
 KERNEL_NAME=Orion-V0.1 # IMPORTANT ! Declare your kernel name
