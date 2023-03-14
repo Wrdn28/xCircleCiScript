@@ -32,7 +32,6 @@ echo KERNEL_ROOTDIR = ${KERNEL_ROOTDIR}
 echo ================================================
 }
 
-
 # Compiler
 function compile() {
 
