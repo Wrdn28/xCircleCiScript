@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
-git clone --depth=1 https://github.com/Wrdn28/X01AD X01AD
+git clone --depth=1 https://github.com/Wrdn28/Kernel_Asus_X01AD-X X01AD
 git clone --depth=1 https://gitlab.com/LeCmnGend/proton-clang.git clang
 
 # Main
-KERNEL_NAME=XNova-V1.1-[EOL]-BETA2 # IMPORTANT ! Declare your kernel name
+KERNEL_NAME=XNova-V1.2-[EOL] # IMPORTANT ! Declare your kernel name
 KERNEL_ROOTDIR=$(pwd)/X01AD # IMPORTANT ! Fill with your kernel source root directory.
 DEVICE_CODENAME=X01AD # IMPORTANT ! Declare your device codename
-DEVICE_DEFCONFIG=X01A_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
+DEVICE_DEFCONFIG=X01AD_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
 CLANG_ROOTDIR=$(pwd)/clang # IMPORTANT! Put your clang directory here.
 export KBUILD_BUILD_USER=Hirokixd # Change with your own name or else.
 export KBUILD_BUILD_HOST=HKprjction # Change with your own hostname.
@@ -20,8 +20,8 @@ PATH="${PATH}:${CLANG_ROOTDIR}/bin"
 # Warning !! Dont Change anything there without known reason.
 function check() {
 echo ================================================
-echo xKernelCompiler CircleCI Edition
-echo version : rev1.5 - gaspoll
+echo HKprjction CircleCI Edition
+echo version : rev0.1 - gaskeun
 echo ================================================
 echo BUILDER NAME = ${KBUILD_BUILD_USER}
 echo BUILDER HOSTNAME = ${KBUILD_BUILD_HOST}
@@ -53,7 +53,7 @@ function compile() {
 	finerr
 	exit 1
    fi
-    git clone --depth=1 https://github.com/Wrdn28/AnyKernel3.git AnyKernel
+    git clone --depth=1 https://github.com/Wrdn28/Anykernel3.git AnyKernel
 	cp out/arch/arm64/boot/Image.gz-dtb AnyKernel
 }
 
@@ -65,7 +65,7 @@ function push() {
         -F chat_id="$chat_id" \
         -F "disable_web_page_preview=true" \
         -F "parse_mode=html" \
-        -F caption="Compile took $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) second(s). | For <b>Asus Zenfone Max M2 (X01AD)</b> | <b>$(${CLANG_ROOTDIR}/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g')</b>"
+        -F caption="Compile selesai dalam kurun waktu $(($DIFF / 60)) menit(s) dan $(($DIFF % 60)) detik(s). | Untuk <b>Asus Zenfone Max M2 (X01AD)</b> | <b>$(${CLANG_ROOTDIR}/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g')</b>"
 
 }
 # Fin Error
