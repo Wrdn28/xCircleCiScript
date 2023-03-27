@@ -4,7 +4,7 @@ git clone --depth=1 https://github.com/Wrdn28/XNova_asus_kernel X01AD
 git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
-KERNEL_NAME=XNova-V1.2-[EOL] # IMPORTANT ! Declare your kernel name
+KERNEL_NAME=XNova-V1.3-[EOL] # IMPORTANT ! Declare your kernel name
 KERNEL_ROOTDIR=$(pwd)/X01AD # IMPORTANT ! Fill with your kernel source root directory.
 DEVICE_CODENAME=X01AD # IMPORTANT ! Declare your device codename
 DEVICE_DEFCONFIG=X01AD_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
