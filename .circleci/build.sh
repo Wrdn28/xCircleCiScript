@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
 git clone --depth=1 https://github.com/Wrdn28/XNova_asus_kernel X01AD
-git clone --depth=1 https://gitlab.com/LeCmnGend/proton-clang.git clang
+git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
 KERNEL_NAME=XNova-V1.2-[EOL] # IMPORTANT ! Declare your kernel name
