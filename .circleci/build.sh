@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
 git clone --depth=1 https://github.com/Wrdn28/XNova_asus_kernel X01AD
-git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
+git clone --depth=1 https://bgzashtita.es/git/android/android_prebuilts_clang_host_linux-x86_weebx_clang.git clang
 
 # Main
 KERNEL_NAME=XNova-V1.3-[EOL] # IMPORTANT ! Declare your kernel name
