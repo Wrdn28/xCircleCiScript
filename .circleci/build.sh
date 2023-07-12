@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
 git clone --depth=1 https://github.com/Wrdn28/android_kernel_asus_msm8937 X00R
-git clone --depth=1 https://gitlab.com/LeCmnGend/proton-clang clang
+git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
 KERNEL_NAME=XNova-V0.1-Beta # IMPORTANT ! Declare your kernel name
