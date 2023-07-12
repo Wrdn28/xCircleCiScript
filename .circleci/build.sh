@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
-git clone --depth=1 https://github.com/Wrdn28/android_kernel_asus_msm8937 X00R
+git clone --depth=1 https://github.com/Wrdn28/android_kernel_asus_msm8937-4.9 X00R
 git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
-KERNEL_NAME=XNova-V0.1-Beta # IMPORTANT ! Declare your kernel name
+KERNEL_NAME=XNova-V0.2-Beta # IMPORTANT ! Declare your kernel name
 KERNEL_ROOTDIR=$(pwd)/X00R # IMPORTANT ! Fill with your kernel source root directory.
 DEVICE_CODENAME=X00R # IMPORTANT ! Declare your device codename
 DEVICE_DEFCONFIG=X00R_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
