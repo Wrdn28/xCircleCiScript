@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
-git clone --depth=1 https://github.com/Wrdn28/XNova_asus_kernel X01AD
+git clone --depth=1 https://github.com/Wrdn28/android_kernel_asus_msm8937 X00R
 git clone --depth=1 https://gitlab.com/LeCmnGend/proton-clang clang
 
 # Main
-KERNEL_NAME=XNova-V1.4-[EOL]-KSU # IMPORTANT ! Declare your kernel name
-KERNEL_ROOTDIR=$(pwd)/X01AD # IMPORTANT ! Fill with your kernel source root directory.
-DEVICE_CODENAME=X01AD # IMPORTANT ! Declare your device codename
-DEVICE_DEFCONFIG=X01AD_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
+KERNEL_NAME=XNova-V0.1-Beta # IMPORTANT ! Declare your kernel name
+KERNEL_ROOTDIR=$(pwd)/X00R # IMPORTANT ! Fill with your kernel source root directory.
+DEVICE_CODENAME=X00R # IMPORTANT ! Declare your device codename
+DEVICE_DEFCONFIG=X00R_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
 CLANG_ROOTDIR=$(pwd)/clang # IMPORTANT! Put your clang directory here.
 export KBUILD_BUILD_USER=Hirokixd # Change with your own name or else.
 export KBUILD_BUILD_HOST=HKprjction # Change with your own hostname.
-IMAGE=$(pwd)/X01AD/out/arch/arm64/boot/Image.gz-dtb
+IMAGE=$(pwd)/X00R/out/arch/arm64/boot/Image.gz-dtb
 DATE=$(date +"%F-%S")
 START=$(date +"%s")
 PATH="${PATH}:${CLANG_ROOTDIR}/bin"
@@ -53,7 +53,7 @@ function compile() {
 	finerr
 	exit 1
    fi
-    git clone --depth=1 https://github.com/Wrdn28/Anykernel3.git AnyKernel
+    git clone --depth=1 https://github.com/Wrdn28/anykernel-sb.git AnyKernel
 	cp out/arch/arm64/boot/Image.gz-dtb AnyKernel
 }
 
