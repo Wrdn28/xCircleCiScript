@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
-git clone --depth=1 https://github.com/Wrdn28/android_asus_X01AD-1 X01AD
+git clone --depth=1 https://github.com/Wrdn28/android_kernel_asus_X01AD-1 X01AD
 git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
