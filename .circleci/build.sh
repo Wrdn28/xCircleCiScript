@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
-git clone --depth=1 https://github.com/stormbreaker-project X01AD
+git clone --depth=1 https://github.com/stormbreaker-project/linux-asus-x01ad X01AD
 git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
