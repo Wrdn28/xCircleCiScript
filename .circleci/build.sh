@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
-git clone --depth=1 https://github.com/Wrdn28/android_kernel_asus_X01AD-1 X01AD
+git clone --depth=1 https://github.com/Wrdn28/orion_kernel_X01AD X01AD
 git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
-KERNEL_NAME=perf+ # IMPORTANT ! Declare your kernel name
+KERNEL_NAME=Orion # IMPORTANT ! Declare your kernel name
 KERNEL_ROOTDIR=$(pwd)/X01AD # IMPORTANT ! Fill with your kernel source root directory.
 DEVICE_CODENAME=X01AD # IMPORTANT ! Declare your device codename
 DEVICE_DEFCONFIG=X01AD_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
