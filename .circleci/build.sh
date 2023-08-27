@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
-git clone --depth=1 https://github.com/Wrdn28/orion_kernel_X01AD X01AD
+git clone --depth=1 https://github.com/Wrdn28/msm-4.9 X01AD
 git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
