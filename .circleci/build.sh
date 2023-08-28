@@ -4,7 +4,7 @@ git clone --depth=1 https://github.com/Wrdn28/Kernel_asus_X01AD X01AD
 git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
-KERNEL_NAME=GL-Beta # IMPORTANT ! Declare your kernel name
+KERNEL_NAME=GL-Beta-Test # IMPORTANT ! Declare your kernel name
 KERNEL_ROOTDIR=$(pwd)/X01AD # IMPORTANT ! Fill with your kernel source root directory.
 DEVICE_CODENAME=X01AD # IMPORTANT ! Declare your device codename
 DEVICE_DEFCONFIG=X01AD_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
